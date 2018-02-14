@@ -72,7 +72,8 @@ public class CalculatorFrame extends JFrame {
         pack();
         setTitle("WORLD'S BEST CALCULATOR");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(true);
+        setResizable(false);
+        setSize(500,500);
         centerFrame(this);
         setVisible(true);
     }

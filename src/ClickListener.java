@@ -9,17 +9,14 @@ public class ClickListener implements ActionListener {
         if(actionCommand.equals("0")) {
             value = CalculatorFrame.LCD.getText() + "0";
             CalculatorFrame.LCD.setText(value);
-            System.out.println(value);
         }
         if(actionCommand.equals("1")) {
             value = CalculatorFrame.LCD.getText() + "1";
             CalculatorFrame.LCD.setText(value);
-            System.out.println(value);
         }
         if(actionCommand.equals("2")) {
             value = CalculatorFrame.LCD.getText() + "2";
             CalculatorFrame.LCD.setText(value);
-            System.out.println(value);
         }
         if(actionCommand.equals("3")) {
             value = CalculatorFrame.LCD.getText() + "3";
@@ -78,10 +75,10 @@ public class ClickListener implements ActionListener {
             CalculatorFrame.LCD.setText(value);
         }
         if(actionCommand.equals("equals")) {
-            value = CalculatorFrame.LCD.getText() + "";
-            CalculatorFrame.LCD.setText(value);
+            value = CalculatorFrame.LCD.getText();
+            double total = CalculatorLogic.Calculator(value);
+            CalculatorFrame.LCD.setText(total + "");
         }
-
 
     }
 }
